@@ -1,0 +1,131 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<HTML>
+<HEAD>
+<META name="GENERATOR" content="IBM HomePage Builder 2000 V4.0.6  for Windows">
+<TITLE>空フォルダ削除君１号 取扱説明書</TITLE>
+<STYLE><!--
+BODY {
+	line-height : 110%;
+	color : #230046;
+	background-color : white;
+	font-family : Tahoma;
+	padding-left : 2em;
+	z-index : auto;
+	padding-right : 2em;
+}
+H1 {	text-align : center;	}
+H2 {
+	border-right-width : 2px;
+	border-bottom-width : 2px;
+	border-right-style : ridge;
+	border-bottom-style : ridge;
+	margin-top : 2em;
+	padding-right : 1ex;
+	padding-bottom : 1ex;
+}
+P {	margin-left : 1em;
+	line-height : 130%;
+}
+EM {	font-weight : bold;
+	vertical-align : baseline;
+	color : #c60000;
+}
+CODE {	font-family : Courier;	}
+LI {
+	margin-bottom : 1ex;
+	border-left-width : 2em;
+	line-height : 130%;
+}
+--></STYLE>
+</HEAD>
+
+<BODY>
+
+
+<H1>空フォルダ削除君１号 取扱説明書</H1>
+<HR>
+
+<H2>■概要</H2>
+<P>
+	中身が空っぽのフォルダを探し出し、一気に削除をするためのツールです。<BR>
+	指示されたフォルダを起点に、そこから下にあるフォルダを全て検索し、中身が空っぽのフォルダをリストアップ、その後一気に削除します。
+</P>
+<P>
+	作者はMP3ファイルを「アーティスト名」→「アルバム名」→「MP3ファイル自身」というフォルダ構成で整理していますが、長年このやり方をやっていると、ファイルの移動などで空のフォルダが結構発生していることが分かりました。<BR>
+	例えば、『映画サントラのフォルダ』内のMP3ファイルを「作曲者別」に分けたとき、『映画のサントラ』のフォルダは空になってしまいますよね。
+</P>
+<P>
+	中身の入っていないフォルダは、エクスプローラで一覧表示させたときに邪魔になります。（何せ、2000強のフォルダがありますので…）<BR>
+	かといって、一つ一つフォルダの中身を確認しながら消すなんてまどろっこしいことはしたくない…。<BR>
+	そこで、本ソフトウェアを作成しました。
+</P>
+<P>結果…30個位しか減らなくて焼け石に水でしたけど(^_^;)</P>
+
+
+<H2>■効能</H2>
+
+<UL>
+	<LI>MP3 や画像ファイルを機械的に整理してごっちゃになったフォルダの整理
+	<LI>長いこと使い込んできたパソコンのフォルダ整理
+	<LI>あちこちに間違って作った「新しいフォルダ」を一掃
+</UL>
+
+<H2>■注意書き</H2>
+
+<P>概要を読んで使い道がいまいちイメージできなかった人にはお勧めできません。</P>
+
+<P>
+	<EM>フォルダ削除という危険な処理が伴います。　しかも、ごみ箱には移さずに完全削除します。</EM><BR>
+	作者環境で十分にテストしていますが、それが貴方のPCでの実行結果を保証するものではありません。
+</P>
+
+
+<H2>■動作環境</H2>
+
+<P>
+	Microsoft Internet Explorer 5.5以降がインストールされたWindows<BR>
+	(Windows Scripting Host 2.0以降がインストールされたWindows)
+</P>
+
+
+<H2>■操作の流れ</H2>
+<OL>
+	<LI>検索したいフォルダを巻物の絵が書いたアイコン(拡張子vbs)にドラッグ＆ドロップします。(複数可)
+	<P>しばらく黙ったあと、「検索完了」というメッセージが表示されます<BR>
+	※待ち時間はフォルダ階層の深さに比例します。焦らずお待ち下さい</P>
+
+	<LI>本スクリプトと同じフォルダに<CODE>&quot;DeleteEmptyFolder.log&quot;</CODE>というファイルが出来ます。<BR>
+	中身は削除対象となるフォルダの一覧です。<BR>
+	意図的に残しておきたいフォルダがある場合、この時に一覧から外しておきます。（＝行を削除する）
+	<LI>本当に削除処理を実行するか最終確認を行います。<BR>
+	　「いいえ」を押すと処理を中止できます。
+	<P><EM><CODE>&quot;DeleteEmptyFolder.log&quot;</CODE>に記されたフォルダが削除されます<BR>
+	※一旦削除処理が始まると、中止することはできません！</EM></P>
+</OL>
+
+
+<H2>■お約束</H2>
+
+<H3>著作権</H3>
+<P>
+	本ソフトウェアはフリーソフトです。<BR>
+	改変・改造・再配布・営利使用を自由に行って頂いて構いません。
+</P>
+
+<H3>免責事項</H3>
+<P>
+	本ソフトウェアを利用した際に発生した、いかなる損害についても作者(不可思議絵の具)は一切の責任を負いません。<BR>
+	本ソフトウェアを使用する者は、これに同意したものと見なします。
+</P>
+<P>
+	作者が自身の都合により作成したソフトウェアですので、作者自らのニーズが発生しない限り、機能追加、バグフィックスなどは行われません。
+</P>
+
+<HR>
+
+<DIV align="right">
+<ADDRESS>&copy;2002 不可思議絵の具(<A href="http://ygkb.jp/">http://ygkb.jp/)</A></ADDRESS>
+</DIV>
+
+</BODY>
+</HTML>
